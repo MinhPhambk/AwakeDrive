@@ -1,18 +1,31 @@
 package com.example.brainwave;
 
-import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 
-public class Intro3Activity extends AppCompatActivity {
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.intro3_view);
+        setContentView(R.layout.splash_view);
+
+        TimerTask task = new TimerTask() {
+
+            @Override
+            public void run() {
+                Intent intent = new Intent(SplashActivity.this, IntroActivity.class);
+                startActivity(intent);
+                this.cancel();
+            }
+        };
+        Timer t = new Timer();
+        t.schedule(task, 2000);
     }
 
     @Override
