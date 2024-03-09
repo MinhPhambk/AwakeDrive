@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Awake Drive</string>
+    <string name="app_name1">Drive</string>
+    <string name="app_name2">Awake</string>
     <string name="butten_label">Label</string>
     <string name="butten_train">Train Model</string>
     <string-array name="list_labels_status">
@@ -15,4 +17,8 @@
     <string name="butten_inference">Infer</string>
     <string name="butten_stop">Stop</string>
     <string name="warning_load_model">Please load model first.</string>
+    <string name="des1">Welcome to the Awake Drive!</string>
+    <string name="des2">Protect your trip effectively. Prevent drowsiness at any time!</string>
+    <string name="head1">Together</string>
+    <string name="head2">Drive</string>
 </resources>
